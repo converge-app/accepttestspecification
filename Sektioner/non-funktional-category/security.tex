@@ -1,0 +1,155 @@
+
+\section{Sikkerhed}
+
+\begin{table}[H]
+    \centering
+    \caption{Accepttestspecifikation for Ikke-funktionelt krav S1 i kategorien Sikkerhed}
+    \label{tab:us-epic1}
+    \begin{tabular}{p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}}
+        \hline
+        \multicolumn{5}{>{\textbf{Krav 1}}m{10cm}}{} \\
+         \hline
+         Beskrivelse af krav   & \multicolumn{4}{p{10cm}}{Netværks kommunikation, skal ske over TLS, uden for kubernetes}    \\
+         \hline
+         Beskrivelse af \newline testens forløb  & \multicolumn{4}{p{10cm}}{}    \\
+         \hline
+        \textbf{Step} & \textbf{Handling} & \textbf{Forvent \newline observation/resultat}   & \textbf{Faktisk \newline observation/resultat}   & \textbf{Vurdering \newline OK/FEJL}  \\
+        \hline
+        1.1               &       &    &     \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Accepttestspecifikation for Ikke-funktionelt krav S2 i kategorien Sikkerhed}
+    \label{tab:us-epic1}
+    \begin{tabular}{p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}}
+        \hline
+        \multicolumn{5}{>{\textbf{Krav 2}}m{10cm}}{} \\
+         \hline
+         Beskrivelse af krav   & \multicolumn{4}{p{10cm}}{Passwords og anden fortroeliginformation skal krypteres med bcrypt for hashing og aes for kryptering}    \\
+         \hline
+         Beskrivelse af \newline testens forløb  & \multicolumn{4}{p{10cm}}{Testen forudsætter at mindst en bruger er registeret Converge platform.}    \\
+         \hline
+        \textbf{Step} & \textbf{Handling} & \textbf{Forvent \newline observation/resultat}   & \textbf{Faktisk \newline observation/resultat}   & \textbf{Vurdering \newline OK/FEJL}  \\
+        \hline
+        1.1               & Slå op i databasen, under ''Users'' tabellen.       & Password kolonnen i databasen vil indeholde et hashet password. &     \\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \caption{Accepttestspecifikation for Ikke-funktionelt krav S3 i kategorien Sikkerhed}
+    \label{tab:us-epic1}
+    \begin{tabular}{p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}}
+        \hline
+        \multicolumn{5}{>{\textbf{Krav 3}}m{10cm}}{} \\
+         \hline
+         Beskrivelse af krav   & \multicolumn{4}{p{10cm}}{Passwords skal hashes med bcrypt på mindst 10 iterationer}    \\
+         \hline
+         Beskrivelse af \newline testens forløb  & \multicolumn{4}{p{10cm}}{Testen forudsætter at mindst en bruger er registeret på Converge platform.}    \\
+         \hline
+        \textbf{Step} & \textbf{Handling} & \textbf{Forvent \newline observation/resultat}   & \textbf{Faktisk \newline observation/resultat}   & \textbf{Vurdering \newline OK/FEJL}  \\
+        \hline
+        1.1               & Slå op i databasen, under ''Users'' tabellen.       & Password kolonnen i databasen vil der kunne ses at password er hashet på mindst 10 iterationer. &     \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Accepttestspecifikation for Ikke-funktionelt krav S4 i kategorien Sikkerhed}
+    \label{tab:us-epic1}
+    \begin{tabular}{p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}}
+        \hline
+        \multicolumn{5}{>{\textbf{Krav 4}}m{10cm}}{} \\
+         \hline
+         Beskrivelse af krav   & \multicolumn{4}{p{10cm}}{Information skal krypteres med AES256-cbc eller gcm}    \\
+         \hline
+         Beskrivelse af \newline testens forløb  & \multicolumn{4}{p{10cm}}{}    \\
+         \hline
+        \textbf{Step} & \textbf{Handling} & \textbf{Forvent \newline observation/resultat}   & \textbf{Faktisk \newline observation/resultat}   & \textbf{Vurdering \newline OK/FEJL}  \\
+        \hline
+        1.1               & Slå op i databasen, under ''Users'' tabellen.       & Password kolonnen i databasen vil der kunne ses at password er hashet på mindst 10 iterationer. &     \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Accepttestspecifikation for Ikke-funktionelt krav S5 i kategorien Sikkerhed}
+    \label{tab:us-epic1}
+    \begin{tabular}{p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}}
+        \hline
+        \multicolumn{5}{>{\textbf{Krav 5}}m{10cm}}{} \\
+         \hline
+         Beskrivelse af krav   & \multicolumn{4}{p{10cm}}{TLS certifikater skal være på mindst 2056 bits}    \\
+         \hline
+         Beskrivelse af \newline testens forløb  & \multicolumn{4}{p{10cm}}{}    \\
+         \hline
+        \textbf{Step} & \textbf{Handling} & \textbf{Forvent \newline observation/resultat}   & \textbf{Faktisk \newline observation/resultat}   & \textbf{Vurdering \newline OK/FEJL}  \\
+        \hline
+        1.1               & Slå op i databasen, under ''Users'' tabellen.       & Password kolonnen i databasen vil der kunne ses at password er hashet på mindst 10 iterationer. &     \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Accepttestspecifikation for Ikke-funktionelt krav S6 i kategorien Sikkerhed}
+    \label{tab:us-epic1}
+    \begin{tabular}{p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}}
+        \hline
+        \multicolumn{5}{>{\textbf{Krav 6}}m{10cm}}{} \\
+         \hline
+         Beskrivelse af krav   & \multicolumn{4}{p{10cm}}{Et password må mindst være 8 karakteres og skal have mindst et stort bokstav}    \\
+         \hline
+         Beskrivelse af \newline testens forløb  & \multicolumn{4}{p{10cm}}{}    \\
+         \hline
+        \textbf{Step} & \textbf{Handling} & \textbf{Forvent \newline observation/resultat}   & \textbf{Faktisk \newline observation/resultat}   & \textbf{Vurdering \newline OK/FEJL}  \\
+        \hline
+        1.1               & Password: "samir" indtastes.       & Vises en fejlmeddelelse. &     \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Accepttestspecifikation for Ikke-funktionelt krav S7 i kategorien Sikkerhed}
+    \label{tab:us-epic1}
+    \begin{tabular}{p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}}
+        \hline
+        \multicolumn{5}{>{\textbf{Krav 7}}m{10cm}}{} \\
+         \hline
+         Beskrivelse af krav   & \multicolumn{4}{p{10cm}}{Betalinger skal foregå ved TLS, og helst med mTLS hvis brug af en tredje part}    \\
+         \hline
+         Beskrivelse af \newline testens forløb  & \multicolumn{4}{p{10cm}}{}    \\
+         \hline
+        \textbf{Step} & \textbf{Handling} & \textbf{Forvent \newline observation/resultat}   & \textbf{Faktisk \newline observation/resultat}   & \textbf{Vurdering \newline OK/FEJL}  \\
+        \hline
+        1.1               & Password: "samir" indtastes.       & Vises en fejlmeddelelse. &     \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Accepttestspecifikation for Ikke-funktionelt krav S7 i kategorien Sikkerhed}
+    \label{tab:us-epic1}
+    \begin{tabular}{p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}}
+        \hline
+        \multicolumn{5}{>{\textbf{Krav 7}}m{10cm}}{} \\
+         \hline
+         Beskrivelse af krav   & \multicolumn{4}{p{10cm}}{Der skal bruges authorisation hvis der skal gives adgang til administrative værktøjer}    \\
+         \hline
+         Beskrivelse af \newline testens forløb  & \multicolumn{4}{p{10cm}}{}    \\
+         \hline
+        \textbf{Step} & \textbf{Handling} & \textbf{Forvent \newline observation/resultat}   & \textbf{Faktisk \newline observation/resultat}   & \textbf{Vurdering \newline OK/FEJL}  \\
+        \hline
+        1.1               & Password: "samir" indtastes.       & Vises en fejlmeddelelse. &     \\
+        \hline
+    \end{tabular}
+\end{table}
