@@ -1,0 +1,388 @@
+
+\section{Epic 2}
+Epic 2 har følgende formulering:
+
+Som en Employer ønsker jeg at arbejde med en freelancer, så jeg kan få lavet noget ønsket arbejde
+nedenfor ses teabellen over epic 2.
+
+
+\begin{table}[H]
+    \centering
+    \caption{User stories for epic 2}
+    \label{tab:us-epic2}
+    \begin{tabular}{p{1cm}|p{2cm}|p{6cm}|p{6cm}}
+        \textbf{Krav nr.} & \textbf{Som} & \textbf{ønsker jeg}                        & \textbf{for at}                                                                                     \\
+        \hline
+        2.1               & Employer     & at kunne oprette et projekt                & få freelancers opmørksomhed og løst en opgave                                                       \\
+        \hline
+        2.2               & Employer     & at kunne slette et projekt                 & \multicolumn{1}{p{6cm}}{slette mit opslag fordi jeg har fortryd, eller det ikke længere er gyldigt} \\
+        \hline
+        2.3               & Employer     & at kunne redigere mit opslag               & ændre mine krav                                                                                     \\
+        \hline
+        2.4               & Employer     & at kunne vælge en freelancer               & få det bedste resultat og gå igang                                                                  \\
+        \hline
+        2.5               & Employer     & at kunne se kvalifikationer på freelancer  & få den mest kvalificerede freelancer                                                                \\
+        \hline
+        2.6               & Employer     & at kunne uploade forskellige dokumenter    & give freelancere materiale at arbejde med                                                           \\
+        \hline
+        2.7               & Employer     & at kunne modtage resultater                & fuldføre jobbet                                                                                     \\
+        \hline
+        2.8               & Employer     & at betale det, det koster at få materialet & for at fuldføre transaktionen                                                                       \\
+    \end{tabular}
+\end{table}
+
+\newpage
+\subsection{User Story 2.1}
+Som Employer ønsker jeg og oprette et projekt.
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 2.1 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Employer indtaster invalid projekt titel\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Project title: 
+                    \item Category: Software
+                    \item Sub category: React
+                    \item Description: Min projekt handler om at udvikle en app i react.
+                    \item Amount: 100 \$ 
+				\end{itemize}} \\
+		\hline
+		Givet at & Employer har trykket sig ind på siden ''Create'' via knappen ''Create a project'' på dashboard siden.\\
+        \hline
+        og & Employer har indtastet invalid projekt titel.\\
+        \hline
+        Når & Employer trykker på knappen ''Create''\\
+        \hline
+        så & vises en fejl.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 2.1 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Employer indtaster invalid kategori\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Project title: React App
+                    \item Category: 
+                    \item Sub category: React
+                    \item Description: Min projekt handler om at udvikle en app i react.
+                    \item Amount: 100 \$ 
+				\end{itemize}} \\
+		\hline
+		Givet at & Employer har trykket sig ind på siden ''Create'' via knappen ''Create a project'' på dashboard siden.\\
+        \hline
+        og & Employer har indtastet invalid kategoru.\\
+        \hline
+        Når & Employer trykker på knappen ''Create''\\
+        \hline
+        så & vises en fejl.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 2.1 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Employer indtaster invalid Beskrivelse\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Project title: React App
+                    \item Category: Software
+                    \item Sub category: React
+                    \item Description: 
+                    \item Amount: 100 \$ 
+				\end{itemize}} \\
+		\hline
+		Givet at & Employer har trykket sig ind på siden ''Create'' via knappen ''Create a project'' på dashboard siden.\\
+        \hline
+        og & Employer har indtastet invalid beskrivelse.\\
+        \hline
+        Når & Employer trykker på knappen ''Create''\\
+        \hline
+        så & vises en fejl.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 2.1 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Employer indtaster invalid Beløb\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Project title: React App
+                    \item Category: Software
+                    \item Sub category: React
+                    \item Description: Min projekt handler om at udvikle en app i react.
+                    \item Amount: 
+				\end{itemize}} \\
+		\hline
+		Givet at & Employer har trykket sig ind på siden ''Create'' via knappen ''Create a project'' på dashboard siden.\\
+        \hline
+        og & Employer har indtastet invalid beløb.\\
+        \hline
+        Når & Employer trykker på knappen ''Create''\\
+        \hline
+        så & vises en fejl.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 2.1 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Employer indtaster valid oplysninger\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Project title: React App
+                    \item Category: Software
+                    \item Sub category: React
+                    \item Description: Min projekt handler om at udvikle en app i react.
+                    \item Amount: 100 \$ 
+				\end{itemize}} \\
+		\hline
+		Givet at & Employer har trykket sig ind på siden ''Create'' via knappen ''Create a project'' på dashboard siden.\\
+        \hline
+        og & Employer har indtastet valid oplysninger.\\
+        \hline
+        Når & Employer trykker på knappen ''Create''\\
+        \hline
+        så &  bliver projektet oprettet og kan nu ses under My projects.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{User Story 2.2}
+Som Employer ønsker jeg og slette et projekt.
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 2.1 }
+	\begin{tabular}{p{8cm}|p{8cm}}
+		\hline
+		\textbf{Scenarie} & Employer sletter et projekt\\[10px]
+		Givet at & Employer har trykket sig ind på siden ''My projects''.\\
+        \hline
+        Når & Employer trykker på knappen ''Delete''\\
+        \hline
+        så & vil projektet ikke kunne ses under My projects.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{User Story 2.3}
+Som Employer ønsker jeg og redigere mit opslag.
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 2.3 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Employer redigere projekt titlen\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Project title: React App project 
+                    \item Category: Software
+                    \item Sub category: React
+                    \item Description: Min projekt handler om at udvikle en app i react.
+                    \item Amount: 100 \$ 
+				\end{itemize}} \\
+		\hline
+		Givet at & Employer har trykket sig ind på siden ''My projects'' via knappen ''My projects'' på dashboard siden.\\
+        \hline
+        og & Employer har redigeret projekt titlen .\\
+        \hline
+        Når & Employer trykker på knappen ''Update''\\
+        \hline
+        så & vises en besked at Employer har nu fortaget ændringer i projektet.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 2.3 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Employer redigere Kategori\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Project title: React App project 
+                    \item Category: Graphic design
+                    \item Sub category: React
+                    \item Description:  Min projekt handler om at udvikle en app i react.
+                    \item Amount: 100 \$ 
+				\end{itemize}} \\
+		\hline
+		Givet at & Employer har trykket sig ind på siden ''My projects'' via knappen ''My projects'' på dashboard siden.\\
+        \hline
+        og & Employer har redigeret kategori .\\
+        \hline
+        Når & Employer trykker på knappen ''Update''\\
+        \hline
+        så & vises en besked at Employer har nu fortaget ændringer i projektet.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 2.3 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Employer redigere beskrivelse\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Project title: React App project 
+                    \item Category: Graphic design
+                    \item Sub category: React
+                    \item Description: Min projekt handler om at udvikle hjemmeside.
+                    \item Amount: 100 \$ 
+				\end{itemize}} \\
+		\hline
+		Givet at & Employer har trykket sig ind på siden ''My projects'' via knappen ''My projects'' på dashboard siden.\\
+        \hline
+        og & Employer har redigeret beskrivelsen .\\
+        \hline
+        Når & Employer trykker på knappen ''Update''\\
+        \hline
+        så & vises en besked at Employer har nu fortaget ændringer i projektet.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 2.3 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Employer redigere beløbet\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Project title: React App project 
+                    \item Category: Graphic design
+                    \item Sub category: React
+                    \item Description: Min projekt handler om at udvikle hjemmeside.
+                    \item Amount: 150 \$ 
+				\end{itemize}} \\
+		\hline
+		Givet at & Employer har trykket sig ind på siden ''My projects'' via knappen ''My projects'' på dashboard siden.\\
+        \hline
+        og & Employer har redigeret beløbet .\\
+        \hline
+        Når & Employer trykker på knappen ''Update''\\
+        \hline
+        så & vises en besked at Employer har nu fortaget ændringer i projektet.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{User Story 2.4}
+Som Employer ønsker jeg og kunne vælge en freelancer .
+
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 2.4 }
+	\begin{tabular}{p{8cm}|p{8cm}}
+		\hline
+		\textbf{Scenarie} & Employer vælger en freelancer\\[10px]
+		\hline
+		Givet at & Employer har trykket sig ind på siden ''Projects''.\\
+        \hline
+        og & Employer vælger en freelancer efter eget ønske.\\
+        \hline
+        Når & Employer trykker på knappen ''CHOOSE''\\
+        \hline
+        så & har Employer valgt en freelancer.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{User Story 2.5}
+Som Employer ønsker jeg og kunne se kvalifikationer på freelancer.
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 2.5 }
+	\begin{tabular}{p{8cm}|p{8cm}}
+		\hline
+		\textbf{Scenarie} & Employer ønsker og se kvalifikationer på freelancer\\[10px]
+		\hline
+		Givet at & Employer har trykket sig ind på siden ''users'' via freelancerens email på ''Projects'' siden.\\
+        \hline
+        og & Employer ser på freelancerens profil.\\
+        \hline
+        så & kan Employer danne et overblik over freelancerens kvalifikationer.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{User Story 2.6}
+Som Employer ønsker jeg og kunne uploade forskellige dokumenter.
+
+
+\subsection{User Story 2.7}
+Som Employer ønsker jeg og kunne modtage resultater.
+
+
+\subsection{User Story 2.8}
+Som Employer ønsker jeg og betale det, det koster at få materialet.

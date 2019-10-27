@@ -1,0 +1,166 @@
+\section{Epic 3}
+Epic 3 har følgende formulering:
+
+Som en Freelancer ønsker jeg at arbejde med en employer, så jeg kan få lavet noget arbejde og derved modtage penge
+nedenfor ses teabellen over epic 3.
+
+\begin{table}[H]
+    \centering
+    \caption{User stories for epic 3}
+    \label{tab:us-epic3}
+    \begin{tabular}{p{1cm}|p{2cm}|p{6cm}|p{6cm}}
+        \textbf{Krav nr.} & \textbf{Som} & \textbf{ønsker jeg}                             & \textbf{for at}                  \\
+        \hline
+        3.1               & Freelancer   & at kunne byde på et projekt                     & få noget arbejde                 \\
+        \hline
+        3.2               & Freelancer   & at kunne slette min anmodning                   & fortyde                          \\
+        \hline
+        3.3               & Freelancer   & at kunne kommentere på et projekt               & for at give min mening           \\
+        \hline
+        3.4               & Freelancer   & at kunne uploade og modtage materiale           & for at have noget at arbejde med \\
+        \hline
+        3.5               & Freelancer   & at kunne se employers profil                    & for at få konfidens i udbyderen  \\
+        \hline
+        3.6               & Freelancer   & at kunne modtage betaling i bytte for materiale & for at fuldføre transkationen    \\
+    \end{tabular}
+\end{table}
+
+\subsection{User Story 3.1}
+Som Freelancer ønsker jeg og kunne byde på et projekt.
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 3.1 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Freelancer indtaster invalid byde besked\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Project Bid message:
+					\item Amount: 100 \$           
+				\end{itemize}} \\
+		\hline
+		Givet at & Freelancer har trykket sig ind på siden ''Projects'' via knappen ''Bid'' på projects siden.\\
+        \hline
+        og & Freelancer har indtastet invalid byde besked.\\
+        \hline
+        Når & Freelancer trykker på knappen ''BID''\\
+        \hline
+        så & vises en fejl.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 3.1 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+        \textbf{Scenarie} & Freelancer indtaster invalid beløb\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Project Bid message: JEg vil virkelig gerne have dette projekt.
+					\item Amount:          
+				\end{itemize}} \\
+		\hline
+		Givet at & Freelancer har trykket sig ind på siden ''Projects'' via knappen ''Bid'' på projects siden.\\
+        \hline
+        og & Freelancer har indtastet invalid beløb.\\
+        \hline
+        Når & Freelancer trykker på knappen ''BID''\\
+        \hline
+        så & vises en fejl.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 3.1 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+        \textbf{Scenarie} & Freelancer indtaster valid oplysninger\\[10px]
+		\hline
+		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+				\begin{itemize}
+					\item Project Bid message: JEg vil virkelig gerne have dette projekt.
+					\item Amount: 100 \$          
+				\end{itemize}} \\
+		\hline
+		Givet at & Freelancer har trykket sig ind på siden ''Projects'' via knappen ''Bid'' på projects siden.\\
+        \hline
+        og & Freelancer har indtastet valid oplysninger.\\
+        \hline
+        Når & Freelancer trykker på knappen ''BID''\\
+        \hline
+        så & bliver bydet accepteret.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\subsection{User Story 3.2}
+Som Freelancer ønsker jeg og kunne slette min anmodning.
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 3.1 }
+	\begin{tabular}{p{8cm}|p{8cm}}
+		\hline
+        \textbf{Scenarie} & Freelancer indtaster valid oplysninger\\[10px]
+		\hline
+		Givet at & Freelancer har trykket sig ind på siden ''Projects'' via knappen ''Bid'' på projects siden.\\
+        \hline
+        og & Freelancer har ønsker og slette sin anmodning.\\
+        \hline
+        Når & Freelancer trykker på knappen ''Delete''\\
+        \hline
+        så & bliver anmodningen slettet.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{User Story 3.3}
+Som Freelancer ønsker jeg og kunne kommentere på et projekt.
+
+\subsection{User Story 3.4}
+Som Freelancer ønsker jeg og kunne uploade og modtage materiale.
+
+\subsection{User Story 3.5}
+Som Freelancer ønsker jeg og kunne se employers profil.
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 2.4 }
+	\begin{tabular}{p{8cm}|p{8cm}}
+		\hline
+		\textbf{Scenarie} & Freelancer ønsker og se employers profil.\\[10px]
+		\hline
+		Givet at & Freelancer har trykket sig ind på siden ''Profile''og kan trykke på employers navn fra Project siden.\\
+        \hline
+        og & Freelancer ser employers profil.\\
+        \hline
+        så &  kan Freelancer danne et overblik over employeren.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{User Story 3.6}
+Som Freelancer ønsker jeg og kunne modtage betaling i bytte for materiale.
