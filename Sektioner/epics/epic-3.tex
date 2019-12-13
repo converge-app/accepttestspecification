@@ -50,7 +50,9 @@ Som Freelancer ønsker jeg og kunne byde på et projekt.
         så & vises en fejl.\\
 		\hline
 		\rowcolor{white}
-		\textbf{Observeret resultat} & \\
+		\textbf{Observeret resultat} & Indtaster ingen besked og fejl meddelelsen vises\\
+		\hline
+		\textbf{Vurdering (OK/FAIL)} & OK\\
 		\hline
 	\end{tabular}
 \end{table}
@@ -77,7 +79,9 @@ Som Freelancer ønsker jeg og kunne byde på et projekt.
         så & vises en fejl.\\
 		\hline
 		\rowcolor{white}
-		\textbf{Observeret resultat} & \\
+		\textbf{Observeret resultat} & Ingen beløb er indtastet og fel meddelelsen vises\\
+		\hline
+		\textbf{Vurdering (OK/FAIL)} & OK\\
 		\hline
 	\end{tabular}
 \end{table}
@@ -104,7 +108,9 @@ Som Freelancer ønsker jeg og kunne byde på et projekt.
         så & bliver bydet accepteret.\\
 		\hline
 		\rowcolor{white}
-		\textbf{Observeret resultat} & \\
+		\textbf{Observeret resultat} & Indtaster korrekt oplysning og brugeren vil nu se det pålagte bud\\
+		\hline
+		\textbf{Vurdering (OK/FAIL)} & OK\\
 		\hline
 	\end{tabular}
 \end{table}
@@ -115,7 +121,7 @@ Som Freelancer ønsker jeg og kunne slette min anmodning.
 
 \begin{table}[H]
 	\centering
-	\caption{Accepttestspecifikation for User Story 3.1 }
+	\caption{Accepttestspecifikation for User Story 3.2 }
 	\begin{tabular}{p{8cm}|p{8cm}}
 		\hline
         \textbf{Scenarie} & Freelancer indtaster valid oplysninger\\[10px]
@@ -129,7 +135,9 @@ Som Freelancer ønsker jeg og kunne slette min anmodning.
         så & bliver anmodningen slettet.\\
 		\hline
 		\rowcolor{white}
-		\textbf{Observeret resultat} & \\
+		\textbf{Observeret resultat} & Buddet fjernes fra listen\\
+		\hline
+		\textbf{Vurdering (OK/FAIL)} & OK\\
 		\hline
 	\end{tabular}
 \end{table}
@@ -137,15 +145,61 @@ Som Freelancer ønsker jeg og kunne slette min anmodning.
 \subsection{User Story 3.3}
 Som Freelancer ønsker jeg og kunne kommentere på et projekt.
 
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 3.3 }
+	\begin{tabular}{p{8cm}|p{8cm}}
+		\hline
+        \textbf{Scenarie} & Freelancer indtaster en kommentar til et projekt\\[10px]
+		\hline
+		Givet at & Freelancer har trykket sig ind på siden ''Projects'' via knappen ''Bid'' på projects siden.\\
+        \hline
+        og & Freelancer har ønsker og kommentere på projektet.\\
+        \hline
+        Når & Freelancer indtaster en kommentar\\
+        \hline
+        så & bliver kommentaren vist.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & \\
+		\hline
+		\textbf{Vurdering (OK/FAIL)} & OK\\
+		\hline
+	\end{tabular}
+\end{table}
+
 \subsection{User Story 3.4}
 Som Freelancer ønsker jeg og kunne uploade og modtage materiale.
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 3.4}
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Freelancer ønsker og uploade en fil\\[10px]
+		\hline
+		Givet at & Freelancer har trykket sig ind på siden ''Collaboration''.\\
+        \hline
+        og & Freelancer uploader en fil .\\
+        \hline
+        Når & Freelancer trykker på knappen ''UPLOAD''\\
+        \hline
+        så & vises det uploadet fil.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & Uploader en fil\\
+		\hline
+		\textbf{Vurdering (OK/FAIL)} & OK\\
+		\hline
+	\end{tabular}
+\end{table}
 
 \subsection{User Story 3.5}
 Som Freelancer ønsker jeg og kunne se employers profil.
 
 \begin{table}[H]
 	\centering
-	\caption{Accepttestspecifikation for User Story 2.4 }
+	\caption{Accepttestspecifikation for User Story 3.5}
 	\begin{tabular}{p{8cm}|p{8cm}}
 		\hline
 		\textbf{Scenarie} & Freelancer ønsker og se employers profil.\\[10px]
@@ -157,10 +211,36 @@ Som Freelancer ønsker jeg og kunne se employers profil.
         så &  kan Freelancer danne et overblik over employeren.\\
 		\hline
 		\rowcolor{white}
-		\textbf{Observeret resultat} & \\
+		\textbf{Observeret resultat} & Freelancer sendes videre til employers profil\\
+		\hline
+		\textbf{Vurdering (OK/FAIL)} & OK\\
 		\hline
 	\end{tabular}
 \end{table}
 
 \subsection{User Story 3.6}
 Som Freelancer ønsker jeg og kunne modtage betaling i bytte for materiale.
+
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 3.6}
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Freelancer modtager betaling for det afleverede materiale\\[10px]
+		\hline
+		Givet at & Freelancer har trykket sig ind på siden ''Collavoration'' og uploader materiale og har herefter trykket sig ind på siden ''My Account'' via knappen ''My Acount''.\\
+        \hline
+        og & Freelancer kan se status på sin account.\\
+        \hline
+        Når & account status ændres\\
+        \hline
+        så & vises det modtaget beløb.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & beløbet er modtaget\\
+		\hline
+		\textbf{Vurdering (OK/FAIL)} & OK\\
+		\hline
+	\end{tabular}
+\end{table}
