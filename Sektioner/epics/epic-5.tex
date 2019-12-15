@@ -1,78 +1,78 @@
 \section{Epic 5}
 Epic 5 har følgende formulering:
 
-Som en bruger kan jeg søge, så jeg kan finde hvad jeg leder efter.
+Som en bruger kan jeg snakke med andre brugere, så jeg kunne formidle mine tanker.
 nedenfor ses teabellen over epic 5.
-
 
 \begin{table}[H]
     \centering
-    \caption{User stories for epic 6}
-    \label{tab:us-epic6}
+    \caption{User stories for epic 5}
+    \label{tab:us-epic4}
     \begin{tabular}{p{1cm}|p{2cm}|p{6cm}|p{6cm}}
-        \textbf{Krav nr.} & \textbf{Som} & \textbf{ønsker jeg}           & \textbf{for at}                     \\
+        \textbf{Krav nr.} & \textbf{Som} & \textbf{ønsker jeg}                        & \textbf{for at}           \\
         \hline
-        5.1               & Bruger       & at kunne søge med nogle ord   & finde den ting jeg leder efter      \\
+        5.1               & Bruger       & at kunne skrive med en anden bruger        & formidle mine tanker      \\
         \hline
-        5.2               & Bruger       & at kunne filtrere med genre   & indskræke et område jeg leder efter \\
+        5.2               & Bruger       & at kunne anmode en anden bruger om kontakt & for at kunne kommunikere  \\
         \hline
-        5.3               & Bruger       & at kunne slette mine filtrere & søge forfra                         \\
+        5.3               & Bruger       & at kunne slette en anden bruger            & ikke længere have kontakt \\
     \end{tabular}
 \end{table}
 
 
-
 \subsection{User Story 5.1}
-Som bruger ønsker jeg og kunne søge med nogle ord. 
-
+Som bruger ønsker jeg og kunne skrive med en anden bruger.
 
 \begin{table}[H]
 	\centering
 	\caption{Accepttestspecifikation for User Story 5.1 }
 	\begin{tabular}{p{6cm}|p{6cm}}
 		\hline
-		\textbf{Scenarie} & Brugeren indtaster invalid søge ord\\[10px]
+		\textbf{Scenarie} & Brugeren indtaster invalid besked\\[10px]
 		\hline
 		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
 				\begin{itemize}
-					\item Search: 
+					\item Message: 
 				\end{itemize}} \\
 		\hline
-        Givet at & brugeren har trykket sig ind på siden ''Categories'' via knappen ''Find a project'' på dashboard.\\
+        Givet at & brugeren har trykket sig ind på siden ''Chat'' via chat icon på dashboard siden.\\
         \hline
-        og & brugeren har indtastet invalid søge ord.\\
+        og & brugeren har indtastet invalid besked.\\
         \hline
-        så & sker der ingen filtrering.\\
+        Når & brugeren trykker på knappen ''Send''\\
+        \hline
+        så & vises en fejl.\\
 		\hline
 		\rowcolor{white}
-		\textbf{Observeret resultat} & Indtaster ingen nøgle ord, der fortages ingen filtrering\\
+		\textbf{Observeret resultat} & Besked er ikke indtastet\\
 		\hline
 		\textbf{Vurdering (OK/FAIL)} & OK\\
 		\hline
 	\end{tabular}
 \end{table}
 
-
 \begin{table}[H]
 	\centering
 	\caption{Accepttestspecifikation for User Story 5.1 }
 	\begin{tabular}{p{6cm}|p{6cm}}
 		\hline
-		\textbf{Scenarie} & Brugeren indtaster valid søge ord\\[10px]
+		\textbf{Scenarie} & Brugeren indtaster valid besked\\[10px]
 		\hline
 		\multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
 				\begin{itemize}
-					\item Search: Banner
+					\item Message: Hej med dig
 				\end{itemize}} \\
 		\hline
-        Givet at & brugeren har trykket sig ind på siden ''Categories'' via knappen ''Find a project'' på dashboard.\\
+        Givet at & brugeren har trykket sig ind på siden ''Chat'' via chat icon på dashboard siden.\\
         \hline
-        og & brugeren har indtastet valid søge ord.\\
+        og & brugeren har indtastet valid besked.\\
         \hline
-        så & sker der en filtrering efter det søgte ord.\\
+        Når & brugeren trykker på knappen ''Send''\\
+        \hline
+        så & bliver beskeden sendt.\\
 		\hline
 		\rowcolor{white}
-		\textbf{Observeret resultat} & Korrekt nøgle ord og filtrering sker\\
+		\textbf{Observeret resultat} & Beskeden er indtastet og sendes til modtageren\\
 		\hline
 		\textbf{Vurdering (OK/FAIL)} & OK\\
 		\hline
@@ -81,23 +81,23 @@ Som bruger ønsker jeg og kunne søge med nogle ord.
 
 
 \subsection{User Story 5.2}
-Som bruger ønsker jeg og kunne filtrere med genre. 
+Som bruger ønsker jeg og kunne anmode en anden bruger om kontakt.
 
 \begin{table}[H]
 	\centering
 	\caption{Accepttestspecifikation for User Story 5.2 }
-	\begin{tabular}{p{6cm}|p{6cm}}
+	\begin{tabular}{p{8cm}|p{8cm}}
 		\hline
-		\textbf{Scenarie} & Brugeren filtrere med genre\\[10px]
+		\textbf{Scenarie} & Brugeren tilføjer en anden bruger som kontakt.\\[10px]
 		\hline
-        Givet at & brugeren har trykket sig ind på siden ''Categories'' via knappen ''Find a project'' på dashboard.\\
+        Givet at & brugeren har trykket sig ind på siden ''Profile''\\
         \hline
-        og & brugeren har filtrere med genre.\\
+        Når & brugeren trykker på knappen ''Add contact''\\
         \hline
-        så & sker der en filtrering efter det valgte genre.\\
+        så & bliver brugeren tilføjet som en kontakt.\\
 		\hline
 		\rowcolor{white}
-		\textbf{Observeret resultat} & Filtrering sker efter genre og vises kun det ønskede genre\\
+		\textbf{Observeret resultat} & Tilføjer en kontakt og kontaktet er nu tilføjet\\
 		\hline
 		\textbf{Vurdering (OK/FAIL)} & OK\\
 		\hline
@@ -105,24 +105,24 @@ Som bruger ønsker jeg og kunne filtrere med genre.
 \end{table}
 
 
-\subsection{User Story 5.2}
-Som bruger ønsker jeg og kunne slette mine filtrere. 
+\subsection{User Story 5.3}
+Som bruger ønsker jeg og kunne slette en anden bruger.
 
 \begin{table}[H]
 	\centering
-	\caption{Accepttestspecifikation for User Story 5.2 }
-	\begin{tabular}{p{6cm}|p{6cm}}
+	\caption{Accepttestspecifikation for User Story 5.3 }
+	\begin{tabular}{p{8cm}|p{8cm}}
 		\hline
-		\textbf{Scenarie} & Brugeren fjerne filtrere\\[10px]
+		\textbf{Scenarie} & Brugeren ønsker og fjerne kontakt fra kontaktlisten.\\[10px]
 		\hline
-        Givet at & brugeren har trykket sig ind på siden ''Categories'' via knappen ''Find a project'' på dashboard.\\
+        Givet at & brugeren har trykket sig ind på siden ''Chat''\\
         \hline
-        og & brugeren har fjernet filtrere.\\
+        Når & brugeren trykker på knappen ''Delete Contact''\\
         \hline
-        så & fjernes brugerens filterere.\\
+        så & bliver Kontakt fjernet fra kontaktlisten.\\
 		\hline
 		\rowcolor{white}
-		\textbf{Observeret resultat} & Genre filtrering fjernes og alle kategorier vises\\
+		\textbf{Observeret resultat} & Kontakt fjernes fra kontaktlisten\\
 		\hline
 		\textbf{Vurdering (OK/FAIL)} & OK\\
 		\hline

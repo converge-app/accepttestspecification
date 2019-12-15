@@ -1,0 +1,165 @@
+\section{Epic 7}
+Epic 7 har følgende formulering:
+
+Som en udvikler kan jeg bruge diverse værktøjer til at udvikle på systemet.
+nedenfor ses teabellen over epic 7.
+
+\begin{table}[H]
+    \centering
+    \caption{User stories for epic 7}
+    \label{tab:us-epic7}
+    \begin{tabular}{p{1cm}|p{2cm}|p{6cm}|p{6cm}}
+        \textbf{Krav nr.} & \textbf{Som}                & \textbf{ønsker jeg}                        & \textbf{for at}                \\\hline
+        7.1               & Developer, Admin            & at kunne se logs for alle requests         & kunne spore en bruger          \\\hline
+        7.2               & Developer, Admin, Supporter & at kunne se rapporter fra brugere          & kunne gøre noget for en bruger \\\hline
+        7.3               & Developer                   & at kunne udvikle ved brug af feature flags & kunne teste i produktion       \\\hline
+        7.4               & Developer, Admin, Supporter & at kunne slette en bruger                  & fjerne dem fra systemet        \\\hline
+        7.5               & Developer, Admin, Supporter & at kunne gendanne en bruger                & hjælpe en bruger               \\
+    \end{tabular}
+\end{table}
+
+
+
+\subsection{User Story 7.1}
+Som Developer og Admin ønsker jeg og kunne se logs fra en bruger.
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 7.1}
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Developer, Admin og se alle logs på bruger\\[10px]
+        \hline
+        Givet at & Developer, Admin og Supporter har tilgået Jaeger  via ''https://www.jaegertracing.io/docs/1.15/''\\
+        \hline
+        og & Developer, Admin har indtastet valid brugernavn.\\
+        \hline
+        Når & Developer, Admin trykker se logs på den bestemte bruger\\
+        \hline
+        så & vises alle loge brugeren har fortaget.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & At kunne se alle logs request på en bestemt bruger\\
+		\hline
+		\textbf{Vurdering (OK/FAIL)} & OK\\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{User Story 7.2}
+Som Developer, Admin og Supporter ønsker og se rapporter fra en bruger.
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 7.2}
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Developer, Admin og Supporter  ønskser og se rapporter\\[10px]
+        \hline
+        Givet at & Developer, Admin og Supporter har trykket sig ind på databasen og  finde en bestemt bruger, der skal ses rapporter over.\\
+        \hline
+        og & Developer, Admin og Supporter har indtastet valid brugernavn.\\
+        \hline
+        Når & Developer, Admin og Supporter trykker på knappen ''Search''\\
+        \hline
+        så & vises en rapporter over alle interaktioner brugeren har fortaget.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & Rapporter over brugerens interaktioner \\
+		\hline
+		\textbf{Vurdering (OK/FAIL)} & OK\\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+
+
+\subsection{User Story 7.4}
+Som Developer, Admin og Supporter ønsker jeg og kunne se slette en bruger.
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 7.4 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Developer, Admin og Supporter  ønskser og slette en bruger\\[10px]
+        \hline
+        \multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+            \begin{itemize}
+                \item Search: Mart<xx 
+            \end{itemize}} \\
+    \hline
+        Givet at & Developer, Admin og Supporter har trykket sig ind på databasen og forsøger finde en bestemt bruger, der skal slettes.\\
+        \hline
+        og & Developer, Admin og Supporter har indtastet invalid brugernavn.\\
+        \hline
+        Når & Developer, Admin og Supporter trykker på knappen ''Search''\\
+        \hline
+        så & vises en besked, ''At brugeren eksistere ikke.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & Indtaster invalid brugernavn\\
+		\hline
+		\textbf{Vurdering (OK/FAIL)} & OK\\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\subsection{User Story 7.4}
+Som Developer, Admin og Supporter ønsker jeg og kunne se slette en bruger.
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 7.4 }
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Developer, Admin og Supporter ønskser og slette en bruger\\[10px]
+        \hline
+        \multicolumn{1}{>{\textbf{Invalide oplysninger:}}m{10cm}}{
+            \begin{itemize}
+                \item Search: Martin 
+            \end{itemize}} \\
+    \hline
+        Givet at & Developer, Admin og Supporter har trykket sig ind på databasen og forsøger finde en bestemt bruger, der skal slettes.\\
+        \hline
+        og & Developer, Admin og Supporter har indtastet valid brugernavn.\\
+        \hline
+        Når & Developer, Admin og Supporter trykker på knappen ''Search''\\
+        \hline
+        så & vises brugeren og brugeren eksistere ikke længere i systemet.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & Indtaster valid brugernavn og brugeren eksistere ikke længere i systemet.\\
+		\hline
+		\textbf{Vurdering (OK/FAIL)} & OK\\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{User Story 7.5}
+Som Developer, Admin og Supporter ønsker og gendanne en bruger.
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation for User Story 7.5}
+	\begin{tabular}{p{6cm}|p{6cm}}
+		\hline
+		\textbf{Scenarie} & Developer, Admin og Supporter  ønskser og gendanne en bruger\\[10px]
+        \hline
+        Givet at & Developer, Admin og Supporter har trykket sig ind på databasen og  finde en bestemt bruger, der skal gendannes.\\
+        \hline
+        og & Developer, Admin og Supporter har indtastet valid brugernavn.\\
+        \hline
+        Når & Developer, Admin og Supporter trykker på knappen ''Gendanne''\\
+        \hline
+        så & vises at brugeren eksistere i systemet.\\
+		\hline
+		\rowcolor{white}
+		\textbf{Observeret resultat} & At brugeren eksistere i systemet \\
+		\hline
+		\textbf{Vurdering (OK/FAIL)} & OK\\
+		\hline
+	\end{tabular}
+\end{table}
